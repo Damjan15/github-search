@@ -23,6 +23,29 @@ body {
     font-size: 15px;
     line-height: 25px;
     background-color: var(--gray-light);
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 700px;
+}
+
+button {
+    border: none;
+    background: none;
+    font-family: inherit;
+}
+
+button:focus {
+    outline: none;
+}
+
+img {
+    width: 100%;
 }
 
 /* Text Styles */
@@ -52,4 +75,17 @@ h4 {
 
 h3, h4 {
     font-size: 400;
+}
+
+
+@media(max-width: 700px) {
+    .container {
+        width: 573px;
+    }
+}
+
+@media(max-width: 575px) {
+    .container {
+        width: 327px;
+    }
 }
