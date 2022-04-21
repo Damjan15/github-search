@@ -1,0 +1,55 @@
+.results {
+    background-color: var(--white);
+    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.resultsHeader {
+    display: flex;
+}
+
+.resultsHeader img {
+    border-radius: 100%;
+}
+
+.resultsInfo {
+    margin-left: 40px;
+}
+
+.resultInfo h1 {
+    color: var(--slate-light);
+}
+
+.resultsInfo .username {
+    color: var(--primary);
+    margin: 10px 0;
+}
+
+.resultsInfo .joinedAt {
+    color: var(--secondary-light);
+}
+
+.resultsDescription {
+    margin: 20px 0;
+}
+
+.resultsDescription p {
+    color: var(--skyblue-light);
+}
+
+.resultsTotal {
+    background-color: var(--gray-light);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+.result h4 {
+    color: var(--skyblue-light);
+}
+
+.result h2 {
+    color: var(--slate-light);
+}
