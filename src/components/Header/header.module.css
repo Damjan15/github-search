@@ -8,13 +8,17 @@
     color: #222731;
 }
 
+.headerDark h1, .headerSwitchDark h4 {
+    color: var(--white);
+}
+
 .headerSwitch {
     display: flex;
     align-items: center;
     cursor: pointer;
 }
 
-.headerSwitch h4 {
+.headerSwitch h4, .headerSwitchDark h4 {
     text-transform: uppercase;
     color: var(--secondary-light);
     margin-right: 10px;
@@ -30,7 +34,7 @@
     color: #222731;
 }
 
-.headerSearch {
+.headerSearch, .headerSearchDark {
     display: flex;
     align-items: center;
     background-color: var(--white);
@@ -41,17 +45,21 @@
     box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
 }
 
+.headerSearchDark {
+    background-color: var(--skyblue-dark);
+}
 
-.headerSearch div:first-child {
+
+.headerSearch div:first-child, .headerSearchDark div:first-child {
     margin-left: 10px;
 }
 
-.headerSearch img {
+.headerSearch img, .headerSearchDark img {
     width: 24px;
     height: 24px;
 }
 
-.headerSearch input {
+.headerSearch input, .headerSearchDark input {
     width: 100%;
     border: none;
     margin: 0 20px;
@@ -60,8 +68,11 @@
     font-weight: 400;
     font-family: inherit;
 }
+.headerSearchDark input {
+    background: none;
+}
 
-.headerSearch input:focus {
+.headerSearch input:focus, .headerSearchDark input:focus {
     outline: none;
 }
 
@@ -69,8 +80,12 @@
     color: var(--skyblue-light);
 }
 
+.headerSearchDark input, .headerSearchDark input::placeholder {
+    color: var(--white);
+}
 
-.headerSearch button {
+
+.headerSearch button, .headerSearchDark button {
     background-color: var(--primary);
     width: 100px;
     height: 50px;
@@ -81,6 +96,6 @@
     cursor: pointer;
 }
 
-.headerSearch button:hover {
+.headerSearch button:hover, .headerSearchDark button:hover {
     opacity: 0.8;
 }

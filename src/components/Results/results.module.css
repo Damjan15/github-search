@@ -1,8 +1,12 @@
-.results {
+.results, .resultsDark {
     background-color: var(--white);
     box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
     padding: 30px;
     border-radius: 15px;
+}
+
+.resultsDark {
+    background-color: var(--skyblue-dark);
 }
 
 .resultsHeader {
@@ -14,7 +18,7 @@
     border-radius: 100%;
 }
 
-.resultsInfo {
+.resultsInfo, .resultInfoDark {
     margin-left: 40px;
 }
 
@@ -22,7 +26,11 @@
     color: var(--slate-light);
 }
 
-.resultsInfo .username {
+.resultInfoDark h1, .resultInfoDark .joinedAt, .resultsDescriptionDark {
+    color: var(--white);
+}
+
+.resultsInfo .username, .resultInfoDark .username {
     color: var(--primary);
     margin: 10px 0;
 }
@@ -39,12 +47,17 @@
     color: var(--skyblue-light);
 }
 
-.resultsTotal {
+.resultsTotal, .resultsTotalDark {
     background-color: var(--gray-light);
     display: flex;
     align-items: center;
     justify-content: space-around;
     padding: 15px;
+    border-radius: 10px;
+}
+
+.resultsTotalDark {
+    background-color: var(--slate-dark);
 }
 
 .result h4 {
@@ -53,4 +66,8 @@
 
 .result h2 {
     color: var(--slate-light);
+}
+
+.resultDark h4, .resultDark h2 {
+    color: var(--white);
 }

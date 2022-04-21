@@ -5,6 +5,9 @@ const GithubContext = createContext();
 export const GithubProvider = ({ children }) => {
     const [ user, setUser ] = useState([]);
     const [ error, setError ] = useState(false);
+    const [ darkMode, setDarkMode ] = useState(false);
+
+    const toggleDarkMode = () => setDarkMode(!darkMode);
 
     const getUser = async (text) => {
         const res = await fetch(`https://api.github.com/users/${text}`);
@@ -18,7 +21,7 @@ export const GithubProvider = ({ children }) => {
     }
 
 
-    return <GithubContext.Provider value={{ user, getUser, error}}>{children}</GithubContext.Provider>
+    return <GithubContext.Provider value={{ user, getUser, error, darkMode, toggleDarkMode}}>{children}</GithubContext.Provider>
 }
 
 export default GithubContext;
